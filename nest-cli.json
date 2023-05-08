@@ -10,15 +10,6 @@
   "monorepo": true,
   "root": "apps/monorepo-nestjs-typeorm",
   "projects": {
-    "monorepo-nestjs-typeorm": {
-      "type": "application",
-      "root": "apps/monorepo-nestjs-typeorm",
-      "entryFile": "main",
-      "sourceRoot": "apps/monorepo-nestjs-typeorm/src",
-      "compilerOptions": {
-        "tsConfigPath": "apps/monorepo-nestjs-typeorm/tsconfig.app.json"
-      }
-    },
     "api": {
       "type": "application",
       "root": "apps/api",
@@ -35,6 +26,15 @@
       "sourceRoot": "apps/admin/src",
       "compilerOptions": {
         "tsConfigPath": "apps/admin/tsconfig.app.json"
+      }
+    },
+    "entity": {
+      "type": "library",
+      "root": "libs/entity",
+      "entryFile": "index",
+      "sourceRoot": "libs/entity/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/entity/tsconfig.lib.json"
       }
     }
   }
